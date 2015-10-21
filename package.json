@@ -4,7 +4,8 @@
   "description": "Node-friendly Navigation Timing API measurement helpers",
   "main": "timing.js",
   "scripts": {
-    "jshint": "jshint timing.js"
+    "jshint": "jshint timing.js",
+    "umd": "./node_modules/.bin/browserify timing.js --standalone node-timing | ./node_modules/.bin/uglifyjs > timing.umd.min.js"
   },
   "repository": {
     "type": "git",
@@ -22,9 +23,13 @@
   },
   "homepage": "https://github.com/droogans/node-timing.js",
   "devDependencies": {
+    "browserify": "11.2.0",
     "chai": "^3.2.0",
     "jshint": "^2.5.6",
     "mocha": "^2.3.2",
     "protractor": "^2.2.0"
+  },
+  "dependencies": {
+    "uglify-js": "~2.5.0"
   }
 }

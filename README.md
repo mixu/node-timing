@@ -3,6 +3,10 @@ node-timing.js
 
 > node-timing.js is a small set of helpers for working with the [Navigation Timing API](https://developer.mozilla.org/en-US/docs/Navigation_timing) to identify where your application is spending its time. Useful as a function to be passed to Selenium's `executeScript` function.
 
+**This fork**: basically, just a compat wrapper for bower that adds a UMD shim and minification.
+
+To rebuild this fork, run `npm install`, `npm run-script umd` and then commit the result.
+
 ## Installation
 
 ```sh

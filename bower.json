@@ -1,0 +1,22 @@
+{
+  "name": "node-timing",
+  "version": "1.1.0",
+  "homepage": "https://github.com/mixu/node-timing",
+  "authors": [
+    "Mikito Takada <mikito.takada@gmail.com>"
+  ],
+  "main": "timing.umd.min.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
